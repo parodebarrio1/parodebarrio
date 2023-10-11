@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../source/repos/porfo/webparo"
+		},
+		{
+			"path": "E:/projecthtml"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projecthtml"
+	}
+}

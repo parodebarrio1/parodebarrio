@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="with=device-width , initial-scale=1.0">
+        <title>ParodeBarrio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="donation.html"><img src="images/mainlogo.jpg" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+                
+                <ul>
+                    <li><a href="donation.html">Home</a></li>
+                    <li><a href="donation.html">About</a></li>
+                    <li><a href="art.html">Arts</a></li>
+                    <li><a href="donation.html">Blog</a></li>
+                    <li><a href="donation.html">Collaborate</a></li>
+                    <li><a href="donation.html">Programs</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                </ul>
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+    
+    </section>
+<!----Programs---->
+
+    <div class="art-gall" >
+        <img src="images/arts/ar1.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar2.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar3.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar4.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar5.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar6.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar7.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar8.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar9.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar10.jpg" onclick="openfullimg(this.src)">
+        <img src="images/arts/ar11.jpg" onclick="openfullimg(this.src)">
+        <img src="images/mshroom/mu1.jpg"onclick="openfullimg(this.src)">
+        <img src="images/mshroom/mu5.jpg"onclick="openfullimg(this.src)">
+        <img src="images/mshroom/mu6.jpg"onclick="openfullimg(this.src)">
+        
+
+    </div>
+    <div class="full-gall" id="fullimgBox">
+        
+        <img src="images/arts/ar1.jpg" id="fullimg">
+
+        
+        <span onclick="closefullimg()">X</span>
+
+    </div>
+
+<script>
+    var fullimgBox = document.getElementById("fullimgBox")
+    var fullimg = document.getElementById("fullimg")
+    function openfullimg(pic){
+        fullimgBox.style.display = "flex";
+        fullimg.src = pic ;
+
+    }
+    function closefullimg(){
+        fullimgBox.style.display = "none";
+    }
+</script>    
+
+
+<section class="footer">
+    <h4>Art</h4>
+    <p>aizoejiojio&j'ihqsdjqsduhiojoz&jeihzaudhqsijd kuhrheiorjsqdfuhuçyzr_&éirjqskhfiuosqhdçqd</p>
+    <div class ="icons">
+        <i class=""></i>
+    </div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu(){
+        navLinks.style.right="0"
+    }
+    function hidemenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+</body>
